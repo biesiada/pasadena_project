@@ -1,4 +1,4 @@
-# Project explanation for processing student files: ![My_image](./pasadena_cc_logo.png)
+<img src="./pasadena_cc_logo.png" width="300" height="200">
 
 # Example 1-validation
 
