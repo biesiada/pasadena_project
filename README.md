@@ -1,3 +1,5 @@
+# Project explanation for processing student files: ![My_image](./pasadena_cc_logo.png)
+
 # Example 1-validation
 
 This example demonstrates how to validate phone numbers in Python.
