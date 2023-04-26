@@ -1,4 +1,4 @@
-<img src="./pasadena_cc_logo.png" width="300" height="200">
+<img src="./pasadena_cc_logo.png" width="200" height="150">
 
 # Example 1-validation
 
