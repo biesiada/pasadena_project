@@ -2,7 +2,7 @@
 
 # Example 1-validation
 
-This example demonstrates how to validate phone numbers in Python.
+This file demonstrates how to validate phone numbers in Python.
 
 ### Importing modules
 
