@@ -26,7 +26,7 @@ o	It then loops through the files in the directory. For each file, the script ch
 3.	Prompts user
 o	The script then prompts the user to input feedback and score for the submission. It then inserts the student data into the tblStudents table and gets the auto-generated student_id. The script then inserts the feedback and score into the tblFeedback and tblScores tables using the student_id.
 4.	Database closes
-o	Finally, the script commits the changes to the database and closes the database connection
+o	Finally, the script commits the changes to the database and closes the database connection.
 
 ### Colab pasdena mydatabase
 
