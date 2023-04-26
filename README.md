@@ -1,4 +1,4 @@
-# pasadena_project
+# Pasadena project
 
 ### Example 1-validation 
 
