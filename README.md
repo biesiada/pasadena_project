@@ -1,6 +1,6 @@
 <img src="./pasadena_cc_logo.png" width="200" height="150">
 
-# Example 1-validation
+# 1. Example 1-validation
 
 This file demonstrates how to validate phone numbers in Python.
 
@@ -68,7 +68,7 @@ while True:
 ```
 
 
-# Example 2 - database 
+# 2. Example 2 - database 
 
 This Python code creates a database of student data. The code first imports the necessary modules, including `re`, `sqlite3`, and `os`. It then connects to the database and creates three tables: `tblStudents`, `tblFeedback`, and `tblScores`.
 
@@ -118,7 +118,7 @@ conn.commit()
 conn.close()
 ``````
 
-# Colab pasadena mydatabase file 
+# 3. Colab pasadena mydatabase file 
 
 This code will connect to a SQLite database, view the tables in the database, view the row data in each table, and run a where clause on a student named "Joe" from the student table.
 
