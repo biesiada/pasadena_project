@@ -66,3 +66,58 @@ while True:
   # Print the score.
   print("The score for {} is {}".format(filename, score))
 ```
+
+
+# Example 2 - database 
+
+This Python code creates a database of student data. The code first imports the necessary modules, including `re`, `sqlite3`, and `os`. It then connects to the database and creates three tables: `tblStudents`, `tblFeedback`, and `tblScores`.
+
+```markdown
+
+import re
+import sqlite3
+import os
+
+```
+
+The code then prompts the user for a last name to search for in the directory. It then loops through the files in the directory and checks if they end with the specified last name. If they do, the code extracts the first and last name from the filename, prompts the user for feedback and a score, and inserts the student data into the database.
+
+```markdown
+
+lname_search = input("Enter the last name to search for in the directory: ")
+
+for file in os.listdir():
+  if file.endswith(lname_search + ".ipynb"):
+    # Extract the first and last name from the filename
+    fname_lname = file.split("_")[0].split(".")[0].split("-")
+    fname = fname_lname[0]
+    lname = fname_lname[1]
+
+    # Prompt the user to input feedback and score for this submission
+    feedback = input("Enter feedback for " + fname + " " + lname + ": ")
+    score = input("Enter score for " + fname + " " + lname + ": ")
+
+    # Insert student data into tblStudents and get the auto-generated student_id
+    c.execute("INSERT INTO tblStudents (fname, lname) VALUES (?, ?)", (fname, lname))
+    student_id = c.lastrowid
+
+    # Insert feedback and score into tblFeedback and tblScores using the student_id
+    c.execute("INSERT INTO tblFeedback (student_id, feedback) VALUES (?, ?)", (student_id, feedback))
+    c.execute("INSERT INTO tblScores (student_id, score) VALUES (?, ?)", (student_id, score))
+```
+
+The code finally commits the changes and closes the database connection.
+
+```python
+conn.commit()
+conn.close()
+``````
+
+
+
+
+
+
+
+
+
