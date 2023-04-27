@@ -72,6 +72,8 @@ while True:
 
 This Python code creates a database of student data. The code first imports the necessary modules, including `re`, `sqlite3`, and `os`. It then connects to the database and creates three tables: `tblStudents`, `tblFeedback`, and `tblScores`.
 
+### Modules
+
 ```markdown
 
 import re
@@ -79,6 +81,7 @@ import sqlite3
 import os
 
 ```
+### Prompts user for data
 
 The code then prompts the user for a last name to search for in the directory. It then loops through the files in the directory and checks if they end with the specified last name. If they do, the code extracts the first and last name from the filename, prompts the user for feedback and a score, and inserts the student data into the database.
 
@@ -105,6 +108,8 @@ for file in os.listdir():
     c.execute("INSERT INTO tblFeedback (student_id, feedback) VALUES (?, ?)", (student_id, feedback))
     c.execute("INSERT INTO tblScores (student_id, score) VALUES (?, ?)", (student_id, score))
 ```
+### Closes database connection
+
 
 The code finally commits the changes and closes the database connection.
 
