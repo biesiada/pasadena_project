@@ -68,7 +68,7 @@ while True:
 ```
 
 
-# 2. Example 2 - database 
+# 2. Example 1 - database 
 
 This Python code creates a database of student data. The code first imports the necessary modules, including `re`, `sqlite3`, and `os`. It then connects to the database and creates three tables: `tblStudents`, `tblFeedback`, and `tblScores`.
 
