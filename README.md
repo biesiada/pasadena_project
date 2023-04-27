@@ -120,10 +120,6 @@ conn.close()
 
 # Colab pasadena mydatabase file 
 
-This file provides instructions on how to upload a database, verify the data, and run SQL queries.
-
-### Python code to view and query a SQLite database
-
 This code will connect to a SQLite database, view the tables in the database, view the row data in each table, and run a where clause on a student named "Joe" from the student table.
 
 ### Method 1: Download database from Google drive after permission granted
@@ -168,6 +164,7 @@ print(tables)
 
 This code first creates a connection to the student_data.db file, then retrieves all rows from each of the three tables using a SELECT statement. The fetchall() method is used to retrieve the result of each query, which is a list of tuples representing the rows in the table. Finally, the code prints out each row of each table using a for loop, so you can see the contents of each table.
 
+```markdown
 ### view the row data within each table
 import sqlite3
 conn = sqlite3.connect('student_data.db')
@@ -193,7 +190,7 @@ scores = cursor.fetchall()
 print("Rows from tblScores:")
 for row in scores:
     print(row)
-
+```
 
 ### Run a where clause on Joe from the student table
 
