@@ -118,6 +118,11 @@ conn.commit()
 conn.close()
 ``````
 
+### Python code to delete a student's scores from SQLite database
+
+This Python code will prompt the user to enter a student_id to search for in the tblStudents table for the SQLite database, and then the code will delete the student score associated with the student ID found and the associated rows in both the tblFeedback and tblScores tables. 
+
+
 # 3. Colab pasadena mydatabase file 
 
 This code will connect to a SQLite database, view the tables in the database, view the row data in each table, and run a where clause on a student named "Joe" from the student table.
